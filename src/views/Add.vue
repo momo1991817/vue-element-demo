@@ -34,7 +34,7 @@
     methods: {
       submit() {
         if (this.form.title !== '' && this.form.content !== '') {
-          store.commit('addNews', this.form)
+          store.commit('addNews', this.form);
           this.$router.go(-1)
         } else {
           this.$message({
